@@ -28,8 +28,6 @@ with open(output, 'rb') as f:
 st.title("Which Bollywood Celebrity Do You Look Like???")
 
 model = VGGFace(model='resnet50', include_top=False, input_shape=(224, 224, 3), pooling='avg')
-feature_list = pickle.load(open('embedding.pkl', 'rb'))
-feature_list = np.array(feature_list)
 filenames = pickle.load(open('filenames.pkl', 'rb'))
 
 
