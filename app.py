@@ -8,6 +8,22 @@ from mtcnn import MTCNN
 from keras_vggface.utils import preprocess_input
 from keras_vggface.vggface import VGGFace
 from sklearn.metrics.pairwise import cosine_similarity
+import gdown
+
+# Download and load the embedding.pkl from Google Drive
+file_id = '1LdBa-zfv3LmufXZA87MRWHf9BgCQHzpz'
+url = f'https://drive.google.com/uc?id={file_id}'
+
+# Output file name
+output = 'embedding.pkl'
+
+# Download file
+gdown.download(url, output, quiet=False)
+
+# Load the pickle file
+with open(output, 'rb') as f:
+    feature_list = pickle.load(f)
+
 
 st.title("Which Bollywood Celebrity Do You Look Like???")
 
