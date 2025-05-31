@@ -2,7 +2,7 @@
 
 **"You Look Like..."** is a fun and engaging Streamlit app that uses facial recognition and deep learning to tell you **which Bollywood celebrity you resemble** most. Upload your image and get a match confidence score along with side-by-side photos!
 
-
+![App UI](assets/App%20UI.png)
 
 ---
 
